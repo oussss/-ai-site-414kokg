@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pixel & Co</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Mega:wght@100..900&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              'neo-yellow': '#FFD60A',
+              'neo-pink': '#FF0054',
+              'neo-purple': '#9D4EDD',
+              'neo-blue': '#3A86FF',
+              'neo-green': '#00F5D4',
+              'neo-black': '#111111',
+              'neo-white': '#FFFFF0',
+            },
+            fontFamily: {
+              'display': ['"Lexend Mega"', 'sans-serif'],
+              'body': ['"Space Grotesk"', 'sans-serif'],
+            },
+            boxShadow: {
+              'hard': '8px 8px 0px 0px #000000',
+              'hard-sm': '4px 4px 0px 0px #000000',
+              'hard-xl': '16px 16px 0px 0px #000000',
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      body {
+        background-color: #FFFFF0;
+        overflow-x: hidden;
+      }
+      ::-webkit-scrollbar {
+        width: 16px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #000;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #FFD60A;
+        border: 4px solid #000;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #FF0054;
+      }
+      .marquee-container {
+        mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
